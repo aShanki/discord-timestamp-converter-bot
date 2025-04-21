@@ -9,7 +9,7 @@ const geocoder = NodeGeocoder({ provider: 'openstreetmap' });
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('settimezone')
-    .setDescription('Set your timezone by city name(2)')
+    .setDescription('Set your timezone by city name')
     .addStringOption(option =>
       option.setName('city')
         .setDescription('Your city (e.g., London, New York)')
